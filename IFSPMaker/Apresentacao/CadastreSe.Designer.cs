@@ -1,4 +1,6 @@
-﻿namespace IFSPMaker.Apresentacao
+﻿using System;
+
+namespace IFSPMaker.Apresentacao
 {
     partial class CadastreSe
     {
@@ -37,12 +39,28 @@
             this.txtConfsenha = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             btnVoltar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btnVoltar
+            // 
+            btnVoltar.BackColor = System.Drawing.Color.FloralWhite;
+            btnVoltar.FlatAppearance.BorderSize = 0;
+            btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnVoltar.Font = new System.Drawing.Font("Bebas Neue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btnVoltar.ForeColor = System.Drawing.Color.Black;
+            btnVoltar.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            btnVoltar.Location = new System.Drawing.Point(327, 226);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new System.Drawing.Size(64, 29);
+            btnVoltar.TabIndex = 6;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblUser
             // 
@@ -79,7 +97,7 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(155, 97);
+            this.txtUsuario.Location = new System.Drawing.Point(172, 97);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(219, 22);
             this.txtUsuario.TabIndex = 1;
@@ -87,7 +105,7 @@
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(155, 153);
+            this.txtSenha.Location = new System.Drawing.Point(172, 153);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(219, 22);
@@ -96,7 +114,7 @@
             // 
             // txtConfsenha
             // 
-            this.txtConfsenha.Location = new System.Drawing.Point(155, 181);
+            this.txtConfsenha.Location = new System.Drawing.Point(172, 181);
             this.txtConfsenha.Name = "txtConfsenha";
             this.txtConfsenha.PasswordChar = '*';
             this.txtConfsenha.Size = new System.Drawing.Size(219, 22);
@@ -108,7 +126,7 @@
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Bebas Neue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.Color.Black;
-            this.btnCadastrar.Location = new System.Drawing.Point(155, 224);
+            this.btnCadastrar.Location = new System.Drawing.Point(172, 222);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(103, 33);
             this.btnCadastrar.TabIndex = 5;
@@ -125,9 +143,20 @@
             this.panel1.Size = new System.Drawing.Size(489, 64);
             this.panel1.TabIndex = 8;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bebas Neue", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Green;
+            this.label1.Location = new System.Drawing.Point(179, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 58);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Sign Up";
+            // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(155, 125);
+            this.txtEmail.Location = new System.Drawing.Point(172, 125);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(219, 22);
             this.txtEmail.TabIndex = 2;
@@ -143,39 +172,12 @@
             this.lblEmail.TabIndex = 11;
             this.lblEmail.Text = "e-mail";
             // 
-            // btnVoltar
-            // 
-            btnVoltar.BackColor = System.Drawing.Color.FloralWhite;
-            btnVoltar.FlatAppearance.BorderSize = 0;
-            btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnVoltar.Font = new System.Drawing.Font("Bebas Neue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            btnVoltar.ForeColor = System.Drawing.Color.Black;
-            btnVoltar.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            btnVoltar.Location = new System.Drawing.Point(310, 224);
-            btnVoltar.Name = "btnVoltar";
-            btnVoltar.Size = new System.Drawing.Size(64, 29);
-            btnVoltar.TabIndex = 6;
-            btnVoltar.Text = "Voltar";
-            btnVoltar.UseVisualStyleBackColor = false;
-            btnVoltar.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bebas Neue", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(179, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 56);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Sign Up";
-            // 
             // CadastreSe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(482, 294);
+            this.ClientSize = new System.Drawing.Size(490, 294);
             this.Controls.Add(btnVoltar);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.txtEmail);
@@ -194,11 +196,23 @@
             this.Name = "CadastreSe";
             this.ShowIcon = false;
             this.Text = "Cadastro";
+            this.Deactivate += new System.EventHandler(this.button1_Click);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+            
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+         
         }
 
         #endregion

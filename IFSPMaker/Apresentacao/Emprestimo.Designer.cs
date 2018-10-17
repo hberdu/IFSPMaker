@@ -40,6 +40,7 @@
             this.Name = "Emprestimo";
             this.ShowIcon = false;
             this.Text = "Emprestimo";
+            this.Load += new System.EventHandler(this.Emprestimo_Load);
             this.ResumeLayout(false);
 
         }

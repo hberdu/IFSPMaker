@@ -16,5 +16,10 @@ namespace IFSPMaker.Apresentacao
         {
             InitializeComponent();
         }
+
+        private void Certificado_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

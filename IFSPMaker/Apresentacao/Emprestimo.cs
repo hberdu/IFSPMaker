@@ -16,5 +16,10 @@ namespace IFSPMaker.Apresentacao
         {
             InitializeComponent();
         }
+
+        private void Emprestimo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

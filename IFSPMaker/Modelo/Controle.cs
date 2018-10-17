@@ -12,26 +12,40 @@ namespace IFSPMaker.Modelo
         public bool tem;
         public string mensagem = "";
 
-        public bool acessar(String login, String senha)
+        public bool acessar(String usuario, String senha)
         {
             LoginDaoComandos LoginDao = new LoginDaoComandos();
-            tem = LoginDao.verificarLogin(login, senha);
-           if ( ! LoginDao.mensagem.Equals(""))
+            tem = LoginDao.AutenticarLogin(usuario, senha);
+            if (!LoginDao.mensagem.Equals(""))
             {
                 this.mensagem = LoginDao.mensagem;
             }
             return tem;
         }
 
-        public string cadastrar(String email, String senha, String confsenha)
+        public bool verificar(String usuario)
         {
-            LoginDaoComandos loginDao = new LoginDaoComandos();
-            this.mensagem = loginDao.cadastrar(email, senha, confsenha);
-            if(loginDao.tem)
+            LoginDaoComandos LoginDao = new LoginDaoComandos();
+            tem = LoginDao.VerificarDupes(usuario);
+            if (!LoginDao.mensagem.Equals(""))
             {
-                this.tem = true;
+                this.mensagem = LoginDao.mensagem;
             }
-            return mensagem;
+            return tem;
         }
+    
+
+    public string cadastrar(String usuario, String senha, String confsenha)
+    {
+        LoginDaoComandos loginDao = new LoginDaoComandos();
+        this.mensagem = loginDao.cadastrar(usuario, senha, confsenha);
+        if (loginDao.tem)
+        {
+            this.tem = true;
+        }
+        return mensagem;
+    }
+
     }
 }
+

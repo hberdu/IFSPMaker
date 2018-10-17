@@ -40,6 +40,7 @@
             this.Name = "Certificado";
             this.ShowIcon = false;
             this.Text = "Certificado";
+            this.Load += new System.EventHandler(this.Certificado_Load);
             this.ResumeLayout(false);
 
         }
